@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root to: 'statics_pages#home'
+
   devise_for :users
   
   resources :relationships, only: [:create, :destroy]
